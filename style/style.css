@@ -42,6 +42,27 @@ a{
     text-decoration: none;
 }
 
+a:hover{ background-color:darkgoldenrod;}
+a:active{ color: white;}
+
+img:hover{
+    animation: imagenes 2s;
+    cursor: pointer;
+}
+
+@keyframes imagenes{
+    0%{
+        transform:translateX(20px);
+    }
+    50%{
+        transform: translateY(80px);
+    }
+    70%{
+        transform: translate(100px);
+    }
+    
+}
+
 
 .enlace{
     font-style: oblique;
