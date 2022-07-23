@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    background-color:beige;
+    min-height: 100px;
+}
+header{
+    font-size: larger;
+    display: grid;
+    justify-content: center;
+   
+}
+header,h1, h2{
+    color:darkgoldenrod;
+}
+nav ul li{
+    list-style-type: none;
+}
+nav ul, article{
+    color: darkgoldenrod;
+    border: 3px solid white;
+}
+p{
+    color: white;
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:300;
+    font-style: oblique;
+}
+a{
+    color:grey;
+    text-decoration: none;
+}
+
+
+.enlace{
+    font-style: oblique;
+    font-weight: 200;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 0;
+}
+footer{
+    padding: 2.5em;
+    background-color:darkgoldenrod;
+    margin-bottom: 0;
+    margin-top: 1.5em;
+}
+header{
+    grid-area: header;
+}
+.contenido{
+    grid-area: contenido;
+}
+nav{
+    grid-area: nav;
+}
+.galeria-grid{
+    grid-area: galeria;
+}
+.marcas{
+    grid-area: marcas;
+}
+.video{
+    grid-area: video;
+}
+.footer{
+    grid-area: footer;
+}
+
+
+.envoltura{
+    background-color:bisque;
+    margin-bottom: 1em;
+    display: grid;
+    grid-template-areas:
+    "header"
+    "nav"
+    "contenido"
+    "galeria"
+    "marcas"
+    "video"
+    "footer";
+    gap: 5px;
+    padding: 10px;
+    position: sticky;
+    top:0px;
+
+}
+.macallanProducto{
+    background-color:darkgrey;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 5px;
+    justify-items: center;
+    border: 3px double black;
+    
+}
+.marcaslogo{
+    background-color:rgb(232, 210, 152);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+   
+}
+video, h1, h3{
+    border: 2px solid black;
+}
+.videoMacallan{
+    background-color:black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+iframe{
+    width: 400px;
+    height: 350px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;  
+}
+.marcas{
+    border: 1px solid black;
+}
+
+
+.customer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    gap: 10px;
+    background-color:darkgoldenrod;
+
+}
+.portafolio{
+    background-color:darkgrey;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 5px;
+    justify-items: center;
+    border: 3px double black;
+}
+
+.novedades{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    gap: 10px;
+    padding: 15px;
+    background-color:darkgoldenrod;
+
+}
+.portada{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    gap: 10px;
+    padding: 15px;
+    background-color:black;
+}
+.form{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    gap: 10px;
+    padding: 15px;
+    background-color:black;
+}
+
+    
+
+@media (min-width:500px){
+    .envoltura{
+        display: grid;
+        grid-template-areas:
+        "header header"
+        "nav nav"
+        "contenido contenido"
+        "galeria galeria"
+        "marcas marcas"
+        "video video"
+        "footer footer";
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    } 
+    .marcaslogo{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    }
+    
+@media(min-width:768px){
+    .envoltura{
+        margin-bottom: 1em;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "contenido contenido contenido"
+        "galeria galeria galeria"
+        "marcas marcas marcas"
+        "video video video"
+        "footer footer footer";
+    }
+    .macallanProducto{
+        background-color:rgb(242, 209, 126);
+        padding: 1.5em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+        margin: 0;
+    }
+    .customer{
+        grid-template-columns: 1fr 1fr;
+    }
+    .marcaslogo{
+        background-color: darkgoldenrod;
+        padding: 1em;
+    }
+    .portafolio{
+        background-color:rgb(242, 209, 126);
+        padding: 1.5em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+        margin: 0;
+    }
+    .novedades{
+        grid-template-columns: 1fr 1fr;
+    }
+        
+    }
+
+@media(min-width:1024px){
+    .macallanProducto{
+        padding: 1em;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: auto;
+        margin: 0;
+    }
+    .marcaslogo{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .portafolio{
+        padding: 1em;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: auto;
+        margin: 0;
+    }
+    .portada{
+        padding: 2em;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: auto;
+        margin: 0;
+    }
+}
+
+
+
+
