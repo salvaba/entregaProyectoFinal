@@ -58,7 +58,7 @@ a{
 }
 
 a:hover{ background-color:darkgoldenrod;}
-a:active{ color: white;}
+a:active{ color: darkgoldenrod;}
 
 img:hover{
     animation: imagenes 2s;
@@ -145,10 +145,7 @@ nav{
 .row{
     background-color:darkgoldenrod;
     padding: 10px;
-    
 }
-
-
 
 .marcaslogo{
     background-color:rgb(232, 210, 152);
@@ -305,8 +302,10 @@ fieldset{
     .novedades{
         grid-template-columns: 1fr 1fr;
     }
-        
+    .row{
+        font-size: 10px;
     }
+}
 
 @media(min-width:1024px){
     .macallanProducto{
@@ -333,7 +332,11 @@ fieldset{
         height: auto;
         margin: 0;
     }
-}
+    .row{
+        font-size: 15px;
+    }
+    }
+
 
 
 
