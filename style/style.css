@@ -189,11 +189,6 @@ video, h1, h3 {
   justify-items: center;
 }
 
-iframe {
-  width: 400px;
-  height: 350px;
-}
-
 .footer {
   display: grid;
   grid-template-columns: 1fr;
@@ -312,6 +307,10 @@ fieldset {
   }
   .row {
     font-size: 10px;
+  }
+  iframe {
+    width: 500px;
+    height: 450px;
   }
 }
 @media (min-width: 1024px) {
